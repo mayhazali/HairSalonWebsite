@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Hair Care - Appointments</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .form {
+            text-align: left; 
+            margin: 20px 0px 0px 40%;
+        }
+
+        .form-group {
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header class="banner">
+        <h1 style="padding-top: 80px;">Set Up an Appointment</h1>
+    </header>
+
+    <!-- Navagation Bar -->
+    <div class="no-mobile">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="appointments.html">Appointments</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
+
+    <div class="is-mobile" style="background-color: #ffdbb9;"> <br />
+        <a href="index.html">Home</a> <br /> <br />
+        <a href="services.html">Services</a> <br /> <br />
+        <a href="appointments.html">Appointments</a> <br /> <br />
+        <a href="contact.html">Contact</a> <br /> <br />
+    </div>
+    
+    <div class="form">
+    <form method=‘get’ action="#"></form>
+        <!-- Name -->
+        <div class="form-group">
+            <label for="name">Full Name:</label> <br />
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+        </div>
+
+        <!-- Email -->
+        <div class="form-group">
+            <label for="email">Email:</label> <br />
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+
+        <!-- Phone number -->
+        <div class="form-group">
+            <label for="phone_number">Phone Number:</label> <br />
+            <input type="number" id="phone_number" name="phone_number" placeholder="Enter your phone number" required>
+        </div>
+
+        <!-- Appointment Type -->
+        <div class="form-group">
+            <label>Appointment Type:</label> <br />
+            <input type="checkbox" id="cut" name="type" value="cut">
+            <label for="cut">Hair Cut</label> <br />
+            <input type="checkbox" id="style" name="type" value="style">
+            <label for="style">Hair Styling</label> <br />
+            <input type="checkbox" id="dye" name="type" value="dye">
+            <label for="dye">Hair Dying</label> <br />
+            <input type="checkbox" id="other" name="type" value="other">
+            <label for="other">Other</label> <br />
+        </div>
+
+        <!-- 'Other' Open Response -->
+        <div class="form-group">
+            <label for="message">If you selected other:</label> <br />
+            <textarea id="message" name="message" rows="4" placeholder="Your message" required></textarea>
+        </div>
+
+        <!-- Date -->
+        <div class="form-group">
+            <label for="day">Appointment Date:</label>
+            <input type="date" id="day" name="day" required>
+        </div>
+
+        <!-- Location -->
+        <div class="form-group">
+            <label for="location">Choose a Branch:</label>
+            <select id="location" name="location">
+                <option value="Boston">Boston</option>
+                <option value="Amherst">Amherst</option>
+                <option value="Worcester">Worcester</option>
+                <option value="Nantucket">Nantucket</option>
+            </select>
+        </div>
+
+        <!-- Submit -->
+        <div class="form-group">
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+    </div>
+</body>
+
+<footer>
+    <p style="text-align: center;">Happy Hair Care | 978-999-8080 | happyhaircare@gmail.com</p>
+</footer>
+
+</html>
